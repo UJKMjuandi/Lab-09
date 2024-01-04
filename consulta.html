@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Universidades Licenciadas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Consulta de Universidades Licenciadas</h1>
-    <form action="/cgi-bin/consulta.pl" method="post">
-        <label for="nombre_universidad">Nombre Universidad:</label>
-        <input type="text" name="nombre_universidad" required>
-        
-        <label for="periodo_licenciamiento">Periodo Licenciamiento:</label>
-        <input type="text" name="periodo_licenciamiento" required>
-        
-        <label for="departamento_local">Departamento Local:</label>
-        <input type="text" name="departamento_local" required>
-        
-        <label for="denominacion_programa">Denominación Programa:</label>
-        <input type="text" name="denominacion_programa" required>
-        
-        <button type="submit">Consultar</button>
-    </form>
+    <div class="container">
+        <h1>Consulta de Universidades Licenciadas</h1>
+        <form action="/cgi-bin/consulta.pl" method="post">
+            <label for="nombre_universidad">Nombre Universidad:</label>
+            <input type="text" name="nombre_universidad" required>
+            
+            <label for="periodo_licenciamiento">Periodo Licenciamiento:</label>
+            <input type="text" name="periodo_licenciamiento" required>
+            
+            <label for="departamento_local">Departamento Local:</label>
+            <input type="text" name="departamento_local" required>
+            
+            <label for="denominacion_programa">Denominación Programa:</label>
+            <input type="text" name="denominacion_programa" required>
+            
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
 </body>
 </html>
